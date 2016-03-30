@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DistanceTracker</string>
+
+    <string name="google_api_key" translatable="false">AIzaSyCfBPffKlnPSAjQ3qdor8L5Zz_iNeChdZo</string>
+
+    <string name="start_tracking_text">Start tracking</string>
+    <string name="stop_tracking_text">Stop tracking</string>
+    <string name="show_distance_text">Show distance</string>
+    <string name="show_location_text">Show location</string>
+
+</resources>
