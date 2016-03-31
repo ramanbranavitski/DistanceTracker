@@ -62,10 +62,6 @@ public class LocationService extends Service implements LocationListener {
 
     private void registerForLocationUpdates() {
         Log.d(TAG, "registerForLocationUpdates");
-        if (mLocationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-            mIsNetworkProviderAvailable = true;
-            mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, TIME_INTERVAL, 50, this);
-        }
         if (mLocationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, TIME_INTERVAL, 50, this);
             mIsGpsProviderAvailable = true;
